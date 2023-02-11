@@ -1,0 +1,539 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<nav id="NavBar" class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #343a3e;">
+    <a class="navbar-brand" id="TopLeftNav">
+    <img src="./assets/Mis/JadenLogo2.png" class="d-inline-block align-top test" alt="One Of My Designs"> Jaden Farquhar
+  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" onclick="DEALAYEDTopVidSize()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item HeaderSlider" id="IntroductionNav">
+              <!--Look at and implement h2 CSS and HTML from main.css and TutorialsV2.html for when secionts are selected, hovered, or transitioned between -->
+            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Introduction')">Introduction</a></h2>
+          </li>
+          <li class="nav-item HeaderSlider" id="SkillsNav">
+            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Skills')">Skills</a></h2><!--  href="#Skills"-->
+          </li>
+          <li class="nav-item HeaderSlider" id="CPNav">
+            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('CP')">Current Projects</a></h2>
+          </li>
+            <li class="nav-item HeaderSlider" id="PPNav">
+            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('PP')">Previous Projects <span class="sr-only">(current)</span></a></h2>
+          </li>
+          <li class="nav-item HeaderSlider" id="ContactNav">
+            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Contact')">Contact</a></h2>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <main role="main" class="container">
+        <section class="HomeScreenVid">
+            <video class="BackgroundVid" playsinline autoplay loop muted>
+            <source src="assets/Videos/AnimSiteTestFootage2.mp4" type="video/mp4"/>
+            <source src="assets/Videos/AnimSiteTestFootage2.webm" type="video/webm">
+            Sorry, your browser doesn't support this video type.
+            </video>
+            <div class="ContentOverVid lead">
+                <!--
+                <div class="HiddenText">
+                    <p id="VidTitleText">Form A Deeper Connection With Reese</p>
+                    <a class="btn btn-success" href="NewDesignersV2.html" role="button">Start Here Today</a>
+                </div>
+                <br>
+                -->
+                <div class="ArrowHolder lead"  style="cursor: pointer;" onclick="SmoothMove('Introduction')">
+                    <div class="AboutMeTxt">About Me</div>
+                    <p1></p1>
+                </div>
+            </div>
+        </section>
+        <div id="HiddenSpaceFixer1" class="Fixers"></div>
+        <section class="Why3D lead" id = "Introduction">
+            <div class="TitleWords">Introduction</div>
+            <div class="IntroductionText">
+                <p class="AjustedFonts4Site">
+                    I am <b>Jaden Farquhar</b> a computer science student at Brandeis University. I specialize in game development and have honed my skills creating various projects. I also have proficiency in website development, and adapting my skills to other disciplines such as musical engineering.
+                    <br><br>
+                    My 3D design and various computer science skills, showcased here, can be applied not only to animation and game design, but architecture, and other various fields. My goal is to continue to expand my knowledge and apply my computer science skills for clients and in a professional setting.
+                    <!My main goal is to tailor present projects that can help communities advance within the growing age of technology. Currently, I am proud to say that list includes clients from my high school, Newton North, Brandeis University in which I am an undergraduate student, and low-income families in the Caribbean. Within the near future, I plan to expand my clientele to aspiring 3D design learners and numerous low income families in need all around the world.>
+                </p>
+            </div>
+        </section>
+        <div id="HiddenSpaceFixer2" class= "Fixers"></div>
+        <section class="back">
+        <div class="holder">
+      <div class="imageBox1">
+          <figure>
+          <div id="full1">
+            <img class="pic top" src="assets/DreamySpace1.PNG"/>
+            <img class="pic mid" src="assets/MedievalMagic.PNG"/>
+            <img class="pic bot" src="assets/Skiing.PNG"/>
+            </div>
+          <!/figcaption>
+            <!h1Skills</h1>
+            <!pFor the past 3 years, I have been teaching myself numerous computer science skills via online articles and tutorials such as W3Schools and Blender Guru.</p>
+              <!a style="cursor: pointer;" onclick="SmoothMove('Skills')"><!View My Skills</a>
+            <!/figcaption>
+          </figure>
+        </div>
+      <div class="imageBox2">
+          <figure>
+          <div id="full1">
+            <img class="pic top" src="assets/SurvivalShooterBanner.PNG"/>
+            <img class="pic mid" src="assets/SurvivalShooterPic.PNG"/>
+            <img class="pic bot" src="assets/SurvivalShooterArt.PNG"/>
+            </div>
+          <!figcaption>
+            <!h1Current Projects</h1>
+            <!pI am working on many of these projects to both pursue my passions and to help various communities.</p>
+              <!a style="cursor: pointer;" onclick="SmoothMove('CP')"><!Explore The Project Details</a>
+              <!/figcaption>
+          </figure>
+          </div>
+      <div class="imageBox3">
+           <figure>
+            <div id="full1">
+            <img class="pic top" src="assets/HickeyClassIsland.PNG"/>
+            <img class="pic mid" src="assets/Bicycle.PNG"/>
+            <img class="pic bot" src="assets/ZombieMap.PNG"/>
+            </div>
+          <!figcaption>
+            <!h1Previous Projects</h1>
+            <!pThese are projects I took on to both improve my skills and to help those in communities around me.</p>
+              <!a style="cursor: pointer;" onclick="SmoothMove('PP')"><!Explore The Project Details</a>
+            <!/figcaption>
+          </figure>
+        </div>
+            </div>
+        </section>
+        <div id="HiddenSpaceFixer3" class= "Fixers"></div>
+        <section class="MySkills lead" id="Skills">
+            <div class="TitleWords">Skills</div>
+            <div class="SkillsText">
+         <table class="table table-dark">
+  <thead>
+      <tr>
+      <th>Languages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/c.png"><br>C</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/csharp.png"><br>C#</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/CSS.png"><br>CSS</td>
+    </tr>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/HTML.png"><br>HTML</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Java.png"><br>Java</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Javascript.png"><br>Javascript</td>
+    </tr>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Python.png"><br>Python</td>
+      <td colspan="1.2"><img class="ImageStandards" src ="assets/SkillsIcons/React.png"><br>React</td>
+      <td colspan="1.2"></td>
+    </tr>
+  </tbody>
+</table>
+
+  <table class="table table-dark">
+  
+</table>
+
+   <table class="table table-dark">
+  <thead>
+      <tr>
+      <th>Tools</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Blender.png"><br>Blender</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Gimp.png"><br>Gimp</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Unity.png"><br>Unity</td>
+    </tr>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Git.png"><br>Git / GitHub</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Chrome.png"><br>Chrome Dev Tools</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Brackets.png"><br>Brackets</td>
+    </tr>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/atom.png"><br>Atom</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/VSCode.png"><br>VS Code</td>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/Eclipse.png"><br>Eclipse</td>
+    </tr>
+    <tr>
+      <td colspan="1.2"><img class="ImageStandards" src="assets/SkillsIcons/FinaleLogo.png"><br>Finale</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </section>
+        <div id="HiddenSpaceFixer4" class= "Fixers"></div>
+        <section class="Why3D2 lead" id="CP">
+            <div class="TitleWords">Current Projects</div>
+            <div class="SPACE2"></div>
+                <div class="FlexDivContainer">
+                <p class="Title4Description">
+                    Survival Shooter Game
+                </p>
+                <p class="TextMaxWidth">
+                    I created and published a game on the Steam Store where you play an eccentric survivalist fighting off waves of enemies in the woods. This game showcased my skills in animation, programming, and 3D art creation. 
+                </p>
+                <div class= "elsUsed"><pre class="Bordered"> Unity </pre><pre> </pre><pre class="Bordered"> Blender </pre><pre> </pre><pre class="Bordered"> Gimp </pre><pre> </pre><pre class="Bordered"> GitHub </pre><pre> </pre><pre class="Bordered"> Chrome Dev Tools </pre><pre> </pre><pre class="Bordered"> Brackets </pre><pre> </div>
+                    <img src="assets/SteamStorePage.PNG" onclick="location.href='assets/BrandaPic.PNG';" class="ImgClean">
+                </div>
+            <div class="BrandaWebTxt lead"  style="cursor: pointer;" onclick="location.href = 'https://store.steampowered.com/app/1698550/The_Pilgrim_Survival/';"><span class="fas fa-arrow-down"></span><br>  Pilgrim Survival Store Page <br><span class="fas fa-arrow-up"></span></div>
+            <div class="SPACE"></div>
+                <div class="FlexDivContainer">
+              
+             <div class="SPACE"></div>
+                <div class="FlexDivContainer">
+                <p class="Title4Description">
+                    A Puzzle Game
+                </p>
+                <p class="TextMaxWidth">
+                    In this game the Player plays a little red robot character who can grow and shrink objects with his lasers. They travel through a forest, a cave, and other set pieces fighting stylized enemies.<br><br> I modelled, animated, and designed all the elements of this game. Its purpose is to showcase my unique style of bright colors and minimalism. <br></br> I plan to release it on Steam<sup>TM</sup> when it is tested and completed.
+                </p>
+                <div class= "elsUsed"><pre class="Bordered"> C# </pre><pre> </pre><pre class="Bordered"> Python </pre><pre> </pre><pre class="Bordered"> Unity </pre><pre> </pre><pre class="Bordered"> Blender </pre><pre> </pre><pre class="Bordered"> Gimp </pre><pre> </pre><pre class="Bordered"> GitHub </pre><pre> </pre><pre class="Bordered"> VS Code </pre></div>
+                    <img src="assets/JReese2.PNG" onclick="location.href='assets/UnityProjectCurrent.PNG';" class="ImgClean">
+                </div>
+
+        </section>
+        <div id="HiddenSpaceFixer5" class= "Fixers"></div>
+        <section class="Why3D3 lead" id="PP">
+            <div class="TitleWords">Previous Projects</div>
+            <div class="SPACE2"></div>
+                <div class="FlexDivContainer">
+               
+            </div>
+           
+                <div class="FlexDivContainer">
+                <p class="Title4Description">
+                    Newton North High School Prom Website
+                </p>
+                <p class="TextMaxWidth">
+                    As a junior in student government I created a website to help with fundraising for the school prom. The website used an animated thermometer to showcase progress to current goals, allowing students a visually satisfying way to track progress.
+                </p>
+                <div class= "elsUsed"><pre class="Bordered"> HTML </pre><pre> </pre><pre class="Bordered"> CSS </pre><pre> </pre><pre class="Bordered"> Javascript </pre><pre> </pre><pre class="Bordered"> Chrome Dev Tools </pre><pre> </pre></div>
+                    <img src="assets/PromWebsite.png" onclick="location.href='assets/SchoolStoreProject.PNG';" class="ImgClean">
+                </div>
+            <div class="SPACE"></div>
+                <div class="FlexDivContainer">
+                <p class="Title4Description">
+                    Piano Scores
+                </p>
+                <p class="TextMaxWidth">
+                    In this project I combined computer science with my passion for piano music. I learned finale software to create written scores of my piano compositions. I then edited them into videos of the recorded music.
+                    <br><br>Computer science can be combined with many different fields, musical engineering being one example. The versatility of computer science is something I continue to explore.
+                </p>
+                <div class= "elsUsed"><pre class="Bordered"> Finale </pre><pre> </pre><pre class="Bordered"> Preview </pre><pre> </pre><pre class="Bordered"> Blender </pre></div>
+                    <img src="assets/MusicScreenshot.PNG" onclick="location.href='assets/SurvivalShooterPic.PNG';" class="ImgClean">
+                </div>
+            <!div class="SPACE"></div>
+                <!div class="FlexDivContainer">
+                <!p class="Title4Description">
+                    <!Various Blender Projects
+                <!/p>
+                <!p class="TextMaxWidth">
+                    <!Over the last three years I have been creating various 3D projects to both improve and maintain my skills as a 3D designer.
+                </p>
+                <!div class= "elsUsed"><!pre class="Bordered"><! Blender </pre><!/div>
+                    <!div id="SlideShow" class="carousel slide" data-ride="carousel">
+                      <!ul class="carousel-indicators">
+                        <!li data-target="#SlideShow" data-slide-to="0" class="active"></li>
+                        <!li data-target="#SlideShow" data-slide-to="1"></li>
+                        <!li data-target="#SlideShow" data-slide-to="2"></li>
+                        <!li data-target="#SlideShow" data-slide-to="3"></li>
+                        <!li data-target="#SlideShow" data-slide-to="4"></li>
+                        <!li data-target="#SlideShow" data-slide-to="5"></li>
+                      <!/ul>
+                      <!div class="carousel-inner">
+                        <!div class="carousel-item active">
+                          <!img src="assets/Bicycle.png" alt="Week 1 Skill Level" class="imageSize" onclick="location.href='assets/myspaceship2.png;">
+
+                        <!/div>
+                        <!div class="carousel-item">
+                          <!img src="assets/3DdesignProjects/arrow%20test.jpg" alt="Week 3 Skill Level" class="imageSize"onclick="location.href='assets/3DdesignProjects/arrow%20test.jpg';">
+
+                        <!/div>
+                        <!div class="carousel-item">
+                          <!img src="assets/3DdesignProjects/bear2.png" alt="Month 3 Skill Level" class="imageSize" onclick="location.href='assets/3DdesignProjects/bear2.png';">
+
+                        <!/div>
+                        <!div class="carousel-item">
+                          <!img src="assets/3DdesignProjects/CrusaderRender.png" alt="Month 5 Skill Level" class="imageSize" onclick="location.href='assets/3DdesignProjects/grass3.png';">
+
+                        <!/div>
+                        <!div class="carousel-item">
+                          <!img src="assets/3DdesignProjects/spacefight1.png" alt="Month 8 Skill Level" class="imageSize" onclick="location.href='assets/3DdesignProjects/spacefight1.png';">
+
+                        <!/div>
+                        <!div class="carousel-item">
+                          <!img src="assets/3DdesignProjects/CityCopter.png" alt="Month 15 Skill Level" class="imageSize" onclick="location.href='assets/3DdesignProjects/CityCopter.png';">
+                        <!/div>
+                      <!/div>
+                      <!a class="carousel-control-prev" href="#SlideShow" data-slide="prev">
+                        <!span class="ArrowColor fas fa-arrow-left"><!/span>
+                      <!/a>
+                      <!a class="carousel-control-next" href="#SlideShow" data-slide="next">
+                        <!span class="ArrowColor fas fa-arrow-right"><!/span>
+                      <!/a>
+                    <!/div>
+                <!/div>
+        <!/section>
+        <!div id="HiddenSpaceFixer6" class= "Fixers"></div>
+        <section class="Contact lead" id="Contact">
+            <div class="TitleWords">Contact</div>
+            <div class="ContactTxt">
+            <p>
+            Want to get in touch? Send me a message and I'll get back to you as soon as I can.
+            </p>
+            <form action="/contactMessage" method="post">
+
+              <div class="form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Email Adress">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+              </div>
+
+            <!--
+                <div class="TempBox">
+                    <p>My API email key is currently temporarily down. Please utilize this HTML mailing function below or manually send an email while this bug is being resolved.</p>
+                <br>
+                <p>Thank you!</p>
+                </div>
+
+              <a id="hoverEffectTemp" href="mailto:reesef908@gmail.com?Subject=Hello%20again" target="_top">reesef908@gmail.com</a>
+-->
+              <button type="submit" class="btn btn-primary mb-2">Send</button>
+            </form>
+            </div>
+        </section>
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function (){
+    /*Ajusts demenstions of top video and text over video*/
+    setTimeout(function () {
+       TopVidSize();
+    }, 290);
+    /*Ajusts font size of title text on text overlaying video*/
+    AjustFontSize();
+    /*Creates a height = to the aboslute divs so that the doc can look smooth*/
+    SpaceFixers();
+    /*Ajusts NavBar CSS based on user postion on screen*/
+    NavActivaction();
+    $(window).resize(function() {
+        TopVidSize();
+        AjustFontSize();
+        SpaceFixers();
+        });
+    $(window).scroll(function() {
+    NavActivaction();
+    });
+    });
+    function TopVidSize(){
+        var Source = document.getElementById("NavBar");
+        var Target = document.getElementsByClassName("HomeScreenVid");
+        var SourceHeight = $(Source).outerHeight();
+        var WindowHeight = $(window).height();
+        var NewHeight = WindowHeight - SourceHeight;
+        $(Target).css("height", NewHeight);
+        $(Target).css("top", SourceHeight);
+        var VidTag = document.getElementsByClassName("BackgroundVid");
+        var VidTagHeight = $(VidTag).height();
+        var VidTagWidth = $(VidTag).width();
+        /*Proportion of (New Window Height)/(Old Video Height)*/
+        var ProportionTracker = NewHeight/VidTagHeight;
+        $(VidTag).css("height", NewHeight);
+        var NewVidWidth = ProportionTracker * VidTagWidth;
+        $(VidTag).css("width", NewVidWidth);
+        var ScreenWidth = $(window).width();
+        if (ScreenWidth > NewVidWidth){
+            $(VidTag).css("left", "0");
+            /*Proportion of (New Window Width)/(Current Video Width)*/
+            ProportionTracker = ScreenWidth/NewVidWidth;
+            $(VidTag).css("width", ScreenWidth);
+            VidTagHeight = ProportionTracker * NewHeight;
+            $(VidTag).css("height", VidTagHeight);
+            var TopVal = (VidTagHeight-NewHeight)/2;
+            $(VidTag).css("top", "-"+TopVal+"px");
+        } else if (ScreenWidth < NewVidWidth){
+            var MarginQuantity = ((ScreenWidth - NewVidWidth)/2);
+            $(VidTag).css("left", MarginQuantity);
+            $(VidTag).css("top", "0");
+        } else {
+            $(VidTag).css("width", ScreenWidth);
+            $(VidTag).css("height", WindowHeight);
+            $(VidTag).css("top", "0");
+            $(VidTag).css("left", "0");
+        }
+        TextOverVid(ScreenWidth,NewHeight);
+    }
+    function DEALAYEDTopVidSize(){
+        setTimeout(function () {
+       TopVidSize();
+    }, 350);
+    }
+    function TextOverVid(ScreenWidth,NewHeight){
+        var Target = document.getElementsByClassName("ContentOverVid");
+        $(Target).css("width", ScreenWidth);
+        $(Target).css("height", NewHeight);
+        SlideUpVidText();
+    }
+    function SlideUpVidText(){
+      var VidText = document.getElementsByClassName("HiddenText");
+      var VidArrow = document.getElementsByClassName("ArrowHolder");
+      $(VidText).addClass("HomeScreenTextAn");
+      setTimeout(function () {
+        $(VidArrow).fadeIn(1000);
+    },1800);
+    }
+    function AjustFontSize(){
+        setTimeout(function () {
+        var PTag = document.getElementById("VidTitleText");
+        var ScreenWidth = $(window).width();
+        var CalcResult = 30 + (0.02 * ScreenWidth);
+        $(PTag).css("font-size", CalcResult);
+    },10);
+    }
+    function AjustFontSize2(){
+        setTimeout(function () {
+        var PTag = document.getElementsByClassName("AjustedFonts4Site");
+        var ScreenWidth = $(window).width();
+        var CalcResult = 30 + (0.02 * ScreenWidth);
+        $(PTag).css("font-size", CalcResult);
+    },10);
+    }
+    function SpaceFixers(){
+        var ScreenHeight = $(window).height();
+        var Fixer1 = document.getElementById("HiddenSpaceFixer1");
+        var Fixer1OffsetTop = $(Fixer1).offset().top;
+        var Fixer1Height = ScreenHeight - Fixer1OffsetTop;
+        $(Fixer1).css("height", Fixer1Height);
+        var Fixer2 = document.getElementById("HiddenSpaceFixer2");
+        var Div4Fixer2 = document.getElementsByClassName("Why3D");
+        var Fixer2Height = $(Div4Fixer2).height();
+        $(Fixer2).css("height", Fixer2Height);
+        var Fixer3 = document.getElementById("HiddenSpaceFixer3");
+        var Div4Fixer3 = document.getElementsByClassName("back");
+        var Fixer3Height = $(Div4Fixer3).height();
+        $(Fixer3).css("height", Fixer3Height);
+        var Fixer4 = document.getElementById("HiddenSpaceFixer4");
+        var Div4Fixer4 = document.getElementsByClassName("MySkills");
+        var Fixer4Height = $(Div4Fixer4).height();
+        $(Fixer4).css("height", Fixer4Height);
+        var Fixer5 = document.getElementById("HiddenSpaceFixer5");
+        var Div4Fixer5 = document.getElementsByClassName("Why3D2");
+        var Fixer5Height = $(Div4Fixer5).height();
+        $(Fixer5).css("height", Fixer5Height);
+        var Fixer6 = document.getElementById("HiddenSpaceFixer6");
+        var Div4Fixer6 = document.getElementsByClassName("Why3D3");
+        var Fixer6Height = $(Div4Fixer6).height();
+        $(Fixer6).css("height", Fixer6Height);
+    }
+    function NavActivaction(){
+        var Userposition = $(window).scrollTop();
+        var ScrollBarHeight = $(document.getElementById("NavBar")).outerHeight();
+        Userposition = Userposition + ScrollBarHeight;
+        var IntroHeight = document.getElementById("Introduction");
+        var Introposition = $(IntroHeight).offset().top;
+        var SkillsHeight = document.getElementById("Skills");
+        var Skillsposition = $(SkillsHeight).offset().top;
+        var CPHeight = document.getElementById("CP");
+        var CPposition = $(CPHeight).offset().top;
+        var PPHeight = document.getElementById("PP");
+        var PPposition = $(PPHeight).offset().top;
+        var ContactHeight = document.getElementById("Contact");
+        var Contactposition = $(ContactHeight).offset().top;
+        if (Userposition > (Contactposition - 1)){
+            $(document.getElementById("ContactNav")).addClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (PPposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).addClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (CPposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).addClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (Skillsposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).addClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (Introposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).addClass("active");
+        }
+    }
+    $('#TopLeftNav').on("click",function(){
+            $('html, body').animate({scrollTop:0}, '550');
+    });
+    /*Gives a smooth transistion for clicking between navbar items*/
+        function SmoothMove(TargetLocation){
+            var Position = $('#'+TargetLocation).offset().top;
+            var NavBarHeight = $(document.getElementById("NavBar")).outerHeight();
+            Position = Position-NavBarHeight;
+            $('html, body').animate({scrollTop:Position}, '550');
+        }
+    </script>
