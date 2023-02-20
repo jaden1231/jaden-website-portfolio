@@ -8,8 +8,6 @@
     background-color: white;
     position: absolute;
     left: 0;
-    display: block;
-    height: 100vh;
     top: 0;
     overflow: hidden;
 }
