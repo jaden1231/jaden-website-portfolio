@@ -1,3 +1,146 @@
+<!DOCTYPE html>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+     $(document).ready(function (){
+
+       $('#TopLeftNav').on("click",function(){
+            $('html, body').animate({scrollTop:0}, '550');
+    });
+
+    
+
+    function SmoothMove(TargetLocation){
+     var Position = $('#'+TargetLocation).offset().top;
+      var NavBarHeight = $(document.getElementById("NavBar")).outerHeight();
+      Position = Position-NavBarHeight;
+    $('html, body').animate({scrollTop:Position}, '550');
+        }
+
+    /*Ajusts font size of title text on text overlaying video*/
+   /* AjustFontSize();*/
+    /*Ajusts NavBar CSS based on user postion on screen*/
+    /*NavActivaction();*/
+    /*
+    $(window).scroll(function() {
+    NavActivaction();
+    });
+    */
+    /*
+    $(window).resize(function() {
+        AjustFontSize();
+        });
+    $(window).scroll(function() {
+    NavActivaction();
+    });
+    });
+    
+   */ 
+
+/*
+
+    function TextOverVid(ScreenWidth,NewHeight){
+        var Target = document.getElementsByClassName("ContentOverVid");
+        $(Target).css("width", ScreenWidth);
+        $(Target).css("height", NewHeight);
+        SlideUpVidText();
+    }
+    function SlideUpVidText(){
+      var VidText = document.getElementsByClassName("HiddenText");
+      var VidArrow = document.getElementsByClassName("ArrowHolder");
+      $(VidText).addClass("HomeScreenTextAn");
+      setTimeout(function () {
+        $(VidArrow).fadeIn(1000);
+    },1800);
+    }
+    function AjustFontSize(){
+        setTimeout(function () {
+        var PTag = document.getElementById("VidTitleText");
+        var ScreenWidth = $(window).width();
+        var CalcResult = 30 + (0.02 * ScreenWidth);
+        $(PTag).css("font-size", CalcResult);
+    },10);
+    }
+    function AjustFontSize2(){
+        setTimeout(function () {
+        var PTag = document.getElementsByClassName("AjustedFonts4Site");
+        var ScreenWidth = $(window).width();
+        var CalcResult = 30 + (0.02 * ScreenWidth);
+        $(PTag).css("font-size", CalcResult);
+    },10);
+    }
+    
+   
+    function NavActivaction(){
+        var Userposition = $(window).scrollTop();
+        var ScrollBarHeight = $(document.getElementById("NavBar")).outerHeight();
+        Userposition = Userposition + ScrollBarHeight;
+        var IntroHeight = document.getElementById("Introduction");
+        var Introposition = $(IntroHeight).offset().top;
+        var SkillsHeight = document.getElementById("Skills");
+        var Skillsposition = $(SkillsHeight).offset().top;
+        var CPHeight = document.getElementById("CP");
+        var CPposition = $(CPHeight).offset().top;
+        var PPHeight = document.getElementById("PP");
+        var PPposition = $(PPHeight).offset().top;
+        var ContactHeight = document.getElementById("Contact");
+        var Contactposition = $(ContactHeight).offset().top;
+        if (Userposition > (Contactposition - 1)){
+            $(document.getElementById("ContactNav")).addClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (PPposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).addClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (CPposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).addClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (Skillsposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).addClass("active");
+            $(document.getElementById("IntroductionNav")).removeClass("active");
+        } else if (Userposition > (Introposition - 1)){
+            $(document.getElementById("ContactNav")).removeClass("active");
+            $(document.getElementById("PPNav")).removeClass("active");
+            $(document.getElementById("CPNav")).removeClass("active");
+            $(document.getElementById("SkillsNav")).removeClass("active");
+            $(document.getElementById("IntroductionNav")).addClass("active");
+        }
+    }
+    
+*/
+   
+    /*Gives a smooth transistion for clicking between navbar items*/
+       
+    /*
+    
+        function adjustRealativeHeight(){
+          $(".imageRelativeBlock").css({'height':($(".holder").height()+'px')});
+    }
+
+    */
+        
+
+  });
+    </script>
+
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,17 +152,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-        body {
-            padding-top: 5rem;
-        }
-
-        .starter-template {
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
-    </style>
 </head>
 
 
@@ -60,13 +192,18 @@
 
 
 
-    <main role="main" class="container">
-        <section class="HomeScreenVid" >
+    
+        <section class="HomeScreenVid">
+          <div class="video-container">
             <video playsinline autoplay loop muted >
-            <source src="assets/Videos/AnimSiteTestFootage2.mp4" type="video/mp4" style="height: auto; width: 100vw;">
-            <source src="assets/Videos/AnimSiteTestFootage2.webm" type="video/webm" style="height: auto; width: 100vw;">
+            <source src="assets/Videos/AnimSiteTestFootage2.mp4" type="video/mp4" >
+            <!-- old video style: style="height: auto; width: 100vw;"-->
+            <!-- <source src="assets/Videos/AnimSiteTestFootage2.webm" type="video/webm" style="height: auto; width: 100vw;"> -->
             Sorry, your browser doesn't support this video type.
             </video>
+          </div>
+
+
             <div class="ContentOverVid lead">
                 <!--
                 <div class="HiddenText">
@@ -81,15 +218,14 @@
                 </div>
             </div>
         </section>
-        <div id="HiddenSpaceFixer1" class="Fixers"></div>
         <section class="Why3D lead" id = "Introduction">
             <div class="TitleWords">Introduction</div>
             <div class="IntroductionText">
                 <p class="AjustedFonts4Site">
-                    I am <b>Jaden Farquhar</b> a computer science student at Brandeis University. I specialize in game development and have honed my skills creating various projects. I also have proficiency in website development, and adapting my skills to other disciplines such as musical engineering.
+                    I'm <b>Jaden Farquhar</b> a computer science student at Brandeis University. I specialize in game development and have honed my skills creating various projects. I also have proficiency in website development, and adapting my skills to other disciplines such as musical engineering.
                     <br><br>
                     My 3D design and various computer science skills, showcased here, can be applied not only to animation and game design, but architecture, and other various fields. My goal is to continue to expand my knowledge and apply my computer science skills for clients and in a professional setting.
-                    <!My main goal is to tailor present projects that can help communities advance within the growing age of technology. Currently, I am proud to say that list includes clients from my high school, Newton North, Brandeis University in which I am an undergraduate student, and low-income families in the Caribbean. Within the near future, I plan to expand my clientele to aspiring 3D design learners and numerous low income families in need all around the world.>
+                    <My main goal is to tailor present projects that can help communities advance within the growing age of technology. Currently, I am proud to say that list includes clients from my high school, Newton North, Brandeis University in which I am an undergraduate student, and low-income families in the Caribbean. Within the near future, I plan to expand my clientele to aspiring 3D design learners and numerous low income families in need all around the world.>
                 </p>
             </div>
         </section>
@@ -103,11 +239,11 @@
             <img class="pic mid" src="assets/MedievalMagic.PNG"/>
             <img class="pic bot" src="assets/Skiing.PNG"/>
             </div>
-          <!/figcaption>
-            <!h1Skills</h1>
-            <!pFor the past 3 years, I have been teaching myself numerous computer science skills via online articles and tutorials such as W3Schools and Blender Guru.</p>
-              <!a style="cursor: pointer;" onclick="SmoothMove('Skills')"><!View My Skills</a>
-            <!/figcaption>
+          <figcaption>
+            <h1>Skills</h1>
+            <p>For the past 3 years, I have been teaching myself numerous computer science skills via online articles and tutorials such as W3Schools and Blender Guru.</p>
+              <a style="cursor: pointer;" onclick="SmoothMove('Skills')">View My Skills</a>
+            </figcaption>
           </figure>
         </div>
       <div class="imageBox2">
@@ -117,11 +253,11 @@
             <img class="pic mid" src="assets/SurvivalShooterPic.PNG"/>
             <img class="pic bot" src="assets/SurvivalShooterArt.PNG"/>
             </div>
-          <!figcaption>
-            <!h1Current Projects</h1>
-            <!pI am working on many of these projects to both pursue my passions and to help various communities.</p>
-              <!a style="cursor: pointer;" onclick="SmoothMove('CP')"><!Explore The Project Details</a>
-              <!/figcaption>
+          <figcaption>
+            <h1>Current Projects</h1>
+            <p> I am working on many of these projects to both pursue my passions and to help various communities.</p>
+              <a style="cursor: pointer;" onclick="SmoothMove('CP')">Explore The Project Details</a>
+              </figcaption>
           </figure>
           </div>
       <div class="imageBox3">
@@ -131,16 +267,16 @@
             <img class="pic mid" src="assets/Bicycle.PNG"/>
             <img class="pic bot" src="assets/ZombieMap.PNG"/>
             </div>
-          <!figcaption>
-            <!h1Previous Projects</h1>
-            <!pThese are projects I took on to both improve my skills and to help those in communities around me.</p>
-              <!a style="cursor: pointer;" onclick="SmoothMove('PP')"><!Explore The Project Details</a>
-            <!/figcaption>
+          <figcaption>
+            <h> Previous Projects</h1>
+            <p> These are projects I took on to both improve my skills and to help those in communities around me.</p>
+              <a style="cursor: pointer;" onclick="SmoothMove('PP')"> Explore The Project Details</a>
+            </figcaption>
           </figure>
         </div>
             </div>
         </section>
-        <div id="HiddenSpaceFixer3" class= "Fixers"></div>
+        
         <section class="MySkills lead" id="Skills">
             <div class="TitleWords">Skills</div>
             <div class="SkillsText">
@@ -233,7 +369,6 @@
                 </div>
 
         </section>
-        <div id="HiddenSpaceFixer5" class= "Fixers"></div>
         <section class="Why3D3 lead" id="PP">
             <div class="TitleWords">Previous Projects</div>
             <div class="SPACE2"></div>
@@ -263,7 +398,8 @@
                 <div class= "elsUsed"><pre class="Bordered"> Finale </pre><pre> </pre><pre class="Bordered"> Preview </pre><pre> </pre><pre class="Bordered"> Blender </pre></div>
                     <img src="assets/MusicScreenshot.PNG" onclick="location.href='assets/SurvivalShooterPic.PNG';" class="ImgClean">
                 </div>
-            <!div class="SPACE"></div>
+              <!--
+            <div class="SPACE"></div>
                 <!div class="FlexDivContainer">
                 <!p class="Title4Description">
                     <!Various Blender Projects
@@ -316,6 +452,7 @@
                 <!/div>
         <!/section>
         <!div id="HiddenSpaceFixer6" class= "Fixers"></div>
+              -->
         <section class="Contact lead" id="Contact">
             <div class="TitleWords">Contact</div>
             <div class="ContactTxt">
@@ -344,197 +481,15 @@
                 <p>Thank you!</p>
                 </div>
 
-              <a id="hoverEffectTemp" href="mailto:reesef908@gmail.com?Subject=Hello%20again" target="_top">reesef908@gmail.com</a>
+              <a id="hoverEffectTemp" href="mailto:jadenfarquhar@gmail.com?Subject=Hello%20again" target="_top">jadenfarquhar@gmail.com</a>
 -->
               <button type="submit" class="btn btn-primary mb-2">Send</button>
             </form>
             </div>
         </section>
-    </main><!-- /.container -->
+    <!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-     $(document).ready(function (){
-    /*Ajusts demenstions of top video and text over video*/
-    setTimeout(function () {
-       TopVidSize();
-    }, 290);
-    /*Ajusts font size of title text on text overlaying video*/
-    AjustFontSize();
-    /*Creates a height = to the aboslute divs so that the doc can look smooth*/
-    SpaceFixers();
-    /*Ajusts NavBar CSS based on user postion on screen*/
-    NavActivaction();
-    $(window).resize(function() {
-        TopVidSize();
-        AjustFontSize();
-        SpaceFixers();
-        });
-    $(window).scroll(function() {
-    NavActivaction();
-    });
-    });
-    function TopVidSize(){
-        var Source = document.getElementById("NavBar");
-        var Target = document.getElementsByClassName("HomeScreenVid");
-        var SourceHeight = $(Source).outerHeight();
-        var WindowHeight = $(window).height();
-        var NewHeight = WindowHeight - SourceHeight;
-        $(Target).css("height", NewHeight);
-        $(Target).css("top", SourceHeight);
-        var VidTag = document.getElementsByClassName("BackgroundVid");
-        var VidTagHeight = $(VidTag).height();
-        var VidTagWidth = $(VidTag).width();
-        /*Proportion of (New Window Height)/(Old Video Height)*/
-        var ProportionTracker = NewHeight/VidTagHeight;
-        $(VidTag).css("height", NewHeight);
-        var NewVidWidth = ProportionTracker * VidTagWidth;
-        $(VidTag).css("width", NewVidWidth);
-        var ScreenWidth = $(window).width();
-        if (ScreenWidth > NewVidWidth){
-            $(VidTag).css("left", "0");
-            /*Proportion of (New Window Width)/(Current Video Width)*/
-            ProportionTracker = ScreenWidth/NewVidWidth;
-            $(VidTag).css("width", ScreenWidth);
-            VidTagHeight = ProportionTracker * NewHeight;
-            $(VidTag).css("height", VidTagHeight);
-            var TopVal = (VidTagHeight-NewHeight)/2;
-            $(VidTag).css("top", "-"+TopVal+"px");
-        } else if (ScreenWidth < NewVidWidth){
-            var MarginQuantity = ((ScreenWidth - NewVidWidth)/2);
-            $(VidTag).css("left", MarginQuantity);
-            $(VidTag).css("top", "0");
-        } else {
-            $(VidTag).css("width", ScreenWidth);
-            $(VidTag).css("height", WindowHeight);
-            $(VidTag).css("top", "0");
-            $(VidTag).css("left", "0");
-        }
-        TextOverVid(ScreenWidth,NewHeight);
-    }
-    function DEALAYEDTopVidSize(){
-        setTimeout(function () {
-       TopVidSize();
-    }, 350);
-    }
-    function TextOverVid(ScreenWidth,NewHeight){
-        var Target = document.getElementsByClassName("ContentOverVid");
-        $(Target).css("width", ScreenWidth);
-        $(Target).css("height", NewHeight);
-        SlideUpVidText();
-    }
-    function SlideUpVidText(){
-      var VidText = document.getElementsByClassName("HiddenText");
-      var VidArrow = document.getElementsByClassName("ArrowHolder");
-      $(VidText).addClass("HomeScreenTextAn");
-      setTimeout(function () {
-        $(VidArrow).fadeIn(1000);
-    },1800);
-    }
-    function AjustFontSize(){
-        setTimeout(function () {
-        var PTag = document.getElementById("VidTitleText");
-        var ScreenWidth = $(window).width();
-        var CalcResult = 30 + (0.02 * ScreenWidth);
-        $(PTag).css("font-size", CalcResult);
-    },10);
-    }
-    function AjustFontSize2(){
-        setTimeout(function () {
-        var PTag = document.getElementsByClassName("AjustedFonts4Site");
-        var ScreenWidth = $(window).width();
-        var CalcResult = 30 + (0.02 * ScreenWidth);
-        $(PTag).css("font-size", CalcResult);
-    },10);
-    }
-    function SpaceFixers(){
-        var ScreenHeight = $(window).height();
-        var Fixer1 = document.getElementById("HiddenSpaceFixer1");
-        var Fixer1OffsetTop = $(Fixer1).offset().top;
-        var Fixer1Height = ScreenHeight - Fixer1OffsetTop;
-        $(Fixer1).css("height", Fixer1Height);
-        var Fixer2 = document.getElementById("HiddenSpaceFixer2");
-        var Div4Fixer2 = document.getElementsByClassName("Why3D");
-        var Fixer2Height = $(Div4Fixer2).height();
-        $(Fixer2).css("height", Fixer2Height);
-        var Fixer3 = document.getElementById("HiddenSpaceFixer3");
-        var Div4Fixer3 = document.getElementsByClassName("back");
-        var Fixer3Height = $(Div4Fixer3).height();
-        $(Fixer3).css("height", Fixer3Height);
-        var Fixer4 = document.getElementById("HiddenSpaceFixer4");
-        var Div4Fixer4 = document.getElementsByClassName("MySkills");
-        var Fixer4Height = $(Div4Fixer4).height();
-        $(Fixer4).css("height", Fixer4Height);
-        var Fixer5 = document.getElementById("HiddenSpaceFixer5");
-        var Div4Fixer5 = document.getElementsByClassName("Why3D2");
-        var Fixer5Height = $(Div4Fixer5).height();
-        $(Fixer5).css("height", Fixer5Height);
-        var Fixer6 = document.getElementById("HiddenSpaceFixer6");
-        var Div4Fixer6 = document.getElementsByClassName("Why3D3");
-        var Fixer6Height = $(Div4Fixer6).height();
-        $(Fixer6).css("height", Fixer6Height);
-    }
-    function NavActivaction(){
-        var Userposition = $(window).scrollTop();
-        var ScrollBarHeight = $(document.getElementById("NavBar")).outerHeight();
-        Userposition = Userposition + ScrollBarHeight;
-        var IntroHeight = document.getElementById("Introduction");
-        var Introposition = $(IntroHeight).offset().top;
-        var SkillsHeight = document.getElementById("Skills");
-        var Skillsposition = $(SkillsHeight).offset().top;
-        var CPHeight = document.getElementById("CP");
-        var CPposition = $(CPHeight).offset().top;
-        var PPHeight = document.getElementById("PP");
-        var PPposition = $(PPHeight).offset().top;
-        var ContactHeight = document.getElementById("Contact");
-        var Contactposition = $(ContactHeight).offset().top;
-        if (Userposition > (Contactposition - 1)){
-            $(document.getElementById("ContactNav")).addClass("active");
-            $(document.getElementById("PPNav")).removeClass("active");
-            $(document.getElementById("CPNav")).removeClass("active");
-            $(document.getElementById("SkillsNav")).removeClass("active");
-            $(document.getElementById("IntroductionNav")).removeClass("active");
-        } else if (Userposition > (PPposition - 1)){
-            $(document.getElementById("ContactNav")).removeClass("active");
-            $(document.getElementById("PPNav")).addClass("active");
-            $(document.getElementById("CPNav")).removeClass("active");
-            $(document.getElementById("SkillsNav")).removeClass("active");
-            $(document.getElementById("IntroductionNav")).removeClass("active");
-        } else if (Userposition > (CPposition - 1)){
-            $(document.getElementById("ContactNav")).removeClass("active");
-            $(document.getElementById("PPNav")).removeClass("active");
-            $(document.getElementById("CPNav")).addClass("active");
-            $(document.getElementById("SkillsNav")).removeClass("active");
-            $(document.getElementById("IntroductionNav")).removeClass("active");
-        } else if (Userposition > (Skillsposition - 1)){
-            $(document.getElementById("ContactNav")).removeClass("active");
-            $(document.getElementById("PPNav")).removeClass("active");
-            $(document.getElementById("CPNav")).removeClass("active");
-            $(document.getElementById("SkillsNav")).addClass("active");
-            $(document.getElementById("IntroductionNav")).removeClass("active");
-        } else if (Userposition > (Introposition - 1)){
-            $(document.getElementById("ContactNav")).removeClass("active");
-            $(document.getElementById("PPNav")).removeClass("active");
-            $(document.getElementById("CPNav")).removeClass("active");
-            $(document.getElementById("SkillsNav")).removeClass("active");
-            $(document.getElementById("IntroductionNav")).addClass("active");
-        }
-    }
-    $('#TopLeftNav').on("click",function(){
-            $('html, body').animate({scrollTop:0}, '550');
-    });
-    /*Gives a smooth transistion for clicking between navbar items*/
-        function SmoothMove(TargetLocation){
-            var Position = $('#'+TargetLocation).offset().top;
-            var NavBarHeight = $(document.getElementById("NavBar")).outerHeight();
-            Position = Position-NavBarHeight;
-            $('html, body').animate({scrollTop:Position}, '550');
-        }
-    </script>
+    
+
+</html>

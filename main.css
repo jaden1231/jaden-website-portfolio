@@ -1,20 +1,66 @@
 /*Home Screen Specific*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 #TopLeftNav{
     color: white;
     cursor: pointer;
 }
+
+.imageRelativeBlock {
+    width: 0;
+    height: auto;
+}
+
 .HomeScreenVid{
     text-align: center;
     background-color: white;
-    position: absolute;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    position: relative;
     left: 0;
     top: 0;
-    overflow: hidden;
+    max-height: 100vh;
+    margin: 0;
 }
-.BackgroundVid{
-    width: auto;
-    height: 100vh;
+.video-container {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+  }
+  .video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+  
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+.BackgroundVid{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    max-height: 100vh;
+    height: auto;
+    position: relative;
     display: block;
     align-content: center;
     opacity: 1;
@@ -99,21 +145,21 @@
     position: relative;
 }
 .Why3D{
-    position: absolute;
+    position: relative;
     left: 0;
     height: auto;
     width: 100vw;
     background-color: #ebebeb;
 }
 .Why3D2{
-    position: absolute;
+    position: relative;
     left: 0;
     height: auto;
     width: 100vw;
     background-color: #ebebeb;
 }
 .Why3D3{
-    position: absolute;
+    position: relative;
     left: 0;
     height: auto;
     width: 100vw;
@@ -127,7 +173,7 @@
     background-color: #ebebeb;
 }
 .MySkills{
-    position: absolute;
+    position: relative;
     display: block;
     left: 0;
     height: auto;/*1180px*/
@@ -208,7 +254,6 @@
 .TitleWords{
     position: relative;
     text-align: center;
-    margin-top: 5%;
     font-size: 2em;
     white-space: nowrap;
 }
@@ -257,13 +302,6 @@
     height: calc(5px + 5vw);
     width: 0;
 }
-.imageSize{
-        width: 100%;
-        height:auto;
-        max-height: 450px;
-        max-width: 700px;
-        margin: auto;
-        }
 .carousel{
     max-height: 450px;
     max-width: 700px;
@@ -305,7 +343,7 @@
 .back{
         width: cover;
         height: calc(500px + 1vw);
-        position: absolute;
+        position: relative;
         left: 0;
         font-family: 'Montserrat', sans-serif;
         background: url(../assets/JadenFarquhar.png);
@@ -317,6 +355,8 @@
         padding: 0;
         outline: 0;
         margin-bottom: 0;
+        background-color: orange;
+        z-index:1000;
     }
 .ImgClean{
     max-width: 30em;
@@ -719,17 +759,16 @@
 
 
 body {
-            padding-top: 2rem;
             height: auto;
             width: 100vw;
             height: auto;
             overflow-x: hidden;
-            height: auto;
             background-color: #ebebeb;
         }
         html, body {
             overflow-x:hidden
         }
+        
         /*!important --> when your at the stage of testing on different browers if this overflow-x doesn't work then try creating a div that covers all of the content and adding this css to it
 
         .overflowFix4Mobile {
@@ -764,9 +803,7 @@ body {
             color: #FFD621!important;
         }
         @media (min-width: 767px) {
-    #BigScreensOnly{
-       display: visible;
-    }
+   
     .navbar-nav {
     float:none;
     margin: 0 auto;
@@ -774,41 +811,7 @@ body {
     display:inline-block;
     text-align: center;
 }
-    .NegMargin {
-            margin-top: -35px;
-        }
-    .trapezoid3 {
-    display: block;
-    animation: trapShow4 3.5s ease;
-    position: relative;
-    margin-left: -240px; /**-17vw*/
-    border-color: #398936 transparent transparent transparent;
-    border-width: 100px 70px 70px 0;
-    height: 0;
-    width: 500px;
-    border-style: solid;
-    filter: drop-shadow(5px 8px 8px);
-
-}
-    .trapezoid4 {
-    display: block;
-    position: absolute;
-    margin-left: -40px; /**-17vw*/
-    margin-top: -90px;
-    border-color: #FFD621 transparent transparent transparent;
-    border-width: 100px 70px 70px 0;
-    height: 0;
-    width: 500px;
-    border-style: solid;
-    filter: drop-shadow(2px 2px 2px);
-
-}
-    .TrapLetters1{
-       margin-top: -90px;
-       margin-left: 120px;
-       font-size: 50px;
-       width: 100%;
-    }
+    
     }
         .test{
             width: 35px;
@@ -819,58 +822,9 @@ body {
         .test:hover{
             border-radius: 16px;
         }
-        #trapezoid1 {
-    position: relative;
-    animation: trapShow1 3.5s ease;
-    border-bottom: 30px solid #FFD621;
-    border-left: 140vw transparent solid;
-    height: 0;
-    width: 0;
-}
-        #trapezoid2 {
-    position: relative;
-    animation: trapShow2 3.5s ease;
-    border-top: 30px solid #FFD621;
-    margin-left: -55vw; /** margin-left: -40vw; */
-    border-left: 0 transparent transparent; /** border-left: 0 solid transparent;*/
-    border-right: 140vw solid transparent;  /** border-right: 140vw solid transparent; */
-    height: 0;
-    width: 0;
-
-}
-    @media (max-width: 767px) {
-    #BigScreensOnly{
-       display: none;
-    }
-
-    .NegMargin {
-            margin-top: -7vw;
-        }
-    .TrapLetters1{
-       margin-top: -14vw;
-       margin-left: 12vw;
-       font-size: 7vw;
-       width: 100%;
-    }
-}
-        @keyframes trapShow1{
-  0% {
-     border-left: 0vw transparent solid;
-  }
-  100% {
-    border-left: 140vw transparent solid;
-  }
-        }
-        @keyframes trapShow2{
-  0% {
-     border-right: 0vw transparent solid;
-     margin-left: 300vw;
-  }
-  100% {
-    border-right: 140vw solid transparent;
-    margin-left: -55vw;
-  }
-        }
+        
+       
+        
         .OddTutEls{
             background-color: #dcddd5;
             color: black;

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "jaden-website-portfolio",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jaden-website-portfolio"
+	}
+}
