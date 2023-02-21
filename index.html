@@ -16,22 +16,17 @@
 
     
 
-    function SmoothMove(TargetLocation){
-     var Position = $('#'+TargetLocation).offset().top;
-      var NavBarHeight = $(document.getElementById("NavBar")).outerHeight();
-      Position = Position-NavBarHeight;
-    $('html, body').animate({scrollTop:Position}, '550');
-        }
+    
 
     /*Ajusts font size of title text on text overlaying video*/
    /* AjustFontSize();*/
     /*Ajusts NavBar CSS based on user postion on screen*/
-    /*NavActivaction();*/
-    /*
+    NavActivaction();
+    
     $(window).scroll(function() {
     NavActivaction();
     });
-    */
+    
     /*
     $(window).resize(function() {
         AjustFontSize();
@@ -75,7 +70,7 @@
         $(PTag).css("font-size", CalcResult);
     },10);
     }
-    
+    */
    
     function NavActivaction(){
         var Userposition = $(window).scrollTop();
@@ -124,7 +119,7 @@
         }
     }
     
-*/
+  
    
     /*Gives a smooth transistion for clicking between navbar items*/
        
@@ -138,6 +133,14 @@
         
 
   });
+
+  function SmoothMove(TargetLocation){
+     var Position = $('#'+TargetLocation).offset().top;
+      var NavBarHeight = $(document.getElementById("NavBar")).outerHeight();
+      Position = Position-NavBarHeight;
+    $('html, body').animate({scrollTop:Position}, '700');
+        }
+
     </script>
 
 <html>
