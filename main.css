@@ -768,6 +768,10 @@ body {
         html, body {
             overflow-x:hidden
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
         
         /*!important --> when your at the stage of testing on different browers if this overflow-x doesn't work then try creating a div that covers all of the content and adding this css to it
 

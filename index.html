@@ -172,19 +172,19 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item HeaderSlider" id="IntroductionNav">
               <!--Look at and implement h2 CSS and HTML from main.css and TutorialsV2.html for when secionts are selected, hovered, or transitioned between -->
-            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Introduction')">Introduction</a></h2>
+            <h2><a class="nav-link" style="cursor: pointer;" href="#Introduction">Introduction</a></h2>
           </li>
           <li class="nav-item HeaderSlider" id="SkillsNav">
-            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Skills')">Skills</a></h2><!--  href="#Skills"-->
+            <h2><a class="nav-link" style="cursor: pointer;" href="#Skills">Skills</a></h2><!--  href="#Skills"-->
           </li>
           <li class="nav-item HeaderSlider" id="CPNav">
-            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('CP')">Current Projects</a></h2>
+            <h2><a class="nav-link" style="cursor: pointer;" href="#CP">Current Projects</a></h2>
           </li>
             <li class="nav-item HeaderSlider" id="PPNav">
-            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('PP')">Previous Projects <span class="sr-only">(current)</span></a></h2>
+            <h2><a class="nav-link" style="cursor: pointer;" href="#PP">Previous Projects <span class="sr-only">(current)</span></a></h2>
           </li>
           <li class="nav-item HeaderSlider" id="ContactNav">
-            <h2><a class="nav-link" style="cursor: pointer;" onclick="SmoothMove('Contact')">Contact</a></h2>
+            <h2><a class="nav-link" style="cursor: pointer;" href="#Contact">Contact</a></h2>
           </li>
         </ul>
       </div>
@@ -215,7 +215,7 @@
                 </div>
                 <br>
                 -->
-                <div class="ArrowHolder lead"  style="cursor: pointer;" onclick="SmoothMove('Introduction')">
+                <div class="ArrowHolder lead"  style="cursor: pointer;" href="#Introduction">
                     <div class="AboutMeTxt">About Me</div>
                     <p1></p1>
                 </div>
@@ -245,7 +245,7 @@
           <figcaption>
             <h1>Skills</h1>
             <p>For the past 3 years, I have been teaching myself numerous computer science skills via online articles and tutorials such as W3Schools and Blender Guru.</p>
-              <a style="cursor: pointer;" onclick="SmoothMove('Skills')">View My Skills</a>
+              <a style="cursor: pointer;" href="#Skills">View My Skills</a>
             </figcaption>
           </figure>
         </div>
@@ -259,7 +259,7 @@
           <figcaption>
             <h1>Current Projects</h1>
             <p> I am working on many of these projects to both pursue my passions and to help various communities.</p>
-              <a style="cursor: pointer;" onclick="SmoothMove('CP')">Explore The Project Details</a>
+              <a style="cursor: pointer;" href="#CP">Explore The Project Details</a>
               </figcaption>
           </figure>
           </div>
@@ -273,7 +273,7 @@
           <figcaption>
             <h> Previous Projects</h1>
             <p> These are projects I took on to both improve my skills and to help those in communities around me.</p>
-              <a style="cursor: pointer;" onclick="SmoothMove('PP')"> Explore The Project Details</a>
+              <a style="cursor: pointer;" href="#PP"> Explore The Project Details</a>
             </figcaption>
           </figure>
         </div>
@@ -459,35 +459,16 @@
         <section class="Contact lead" id="Contact">
             <div class="TitleWords">Contact</div>
             <div class="ContactTxt">
-            <p>
-            Want to get in touch? Send me a message and I'll get back to you as soon as I can.
-            </p>
-            <form action="/contactMessage" method="post">
-
-              <div class="form-group">
-                <label for="exampleFormControlInput1"></label>
-                <input name="name" type="name" class="form-control" id="name" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1"></label>
-                <input name="email" type="email" class="form-control" id="email" placeholder="Email Adress">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Message"></textarea>
-              </div>
-
-            <!--
+            
                 <div class="TempBox">
-                    <p>My API email key is currently temporarily down. Please utilize this HTML mailing function below or manually send an email while this bug is being resolved.</p>
+                    <p> Want to get in touch? Click on my email address to send me a message. I'll get back to you as soon as I can.</p>
+                <br>
+                <a id="hoverEffectTemp" href="mailto:jadenfarquhar@gmail.com?Subject=Hello%20again" target="_top">jadenfarquhar@gmail.com</a>
+                <br>
                 <br>
                 <p>Thank you!</p>
                 </div>
-
-              <a id="hoverEffectTemp" href="mailto:jadenfarquhar@gmail.com?Subject=Hello%20again" target="_top">jadenfarquhar@gmail.com</a>
--->
-              <button type="submit" class="btn btn-primary mb-2">Send</button>
-            </form>
+            
             </div>
         </section>
     <!-- /.container -->
